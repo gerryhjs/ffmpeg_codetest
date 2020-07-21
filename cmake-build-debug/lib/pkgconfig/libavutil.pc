@@ -1,0 +1,14 @@
+prefix=/Volumes/MC11
+exec_prefix=${prefix}
+libdir=/Volumes/MC11/lib
+includedir=/Volumes/MC11/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.31.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Cflags: -I${includedir}

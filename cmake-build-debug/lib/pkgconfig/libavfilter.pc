@@ -1,0 +1,14 @@
+prefix=/Volumes/MC11
+exec_prefix=${prefix}
+libdir=/Volumes/MC11/lib
+includedir=/Volumes/MC11/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 7.57.100
+Requires: 
+Requires.private: libswscale >= 5.5.100, libavutil >= 56.31.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter 
+Libs.private: -pthread -lm -L/usr/local/lib -lfreetype
+Cflags: -I${includedir}
