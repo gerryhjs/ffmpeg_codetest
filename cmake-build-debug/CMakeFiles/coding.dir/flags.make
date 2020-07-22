@@ -6,5 +6,5 @@ CXX_FLAGS = -g -Wall -std=c++11 -O0 -DXOP_DEBUG -isysroot /Library/Developer/Com
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/xmapp/Documents/GitHub/ffmpeg_codetest/libs/ffmpeg -I/Users/xmapp/Documents/GitHub/ffmpeg_codetest/libs/include 
+CXX_INCLUDES = -I/Users/xmapp/Documents/GitHub/ffmpeg_codetest/examples -I/Users/xmapp/Documents/GitHub/ffmpeg_codetest/libs/ffmpeg/include 
 
