@@ -37,12 +37,12 @@ link_directories(${PROJECT_SOURCE_DIR}/libs/ffmpeg/lib)
 
 add_executable(ffmpeg_test ${PROJECT_SOURCE_DIR}/main.cpp)
 target_link_libraries(ffmpeg_test coding
-        avcodec
-        avdevice
-        avfilter
-        avformat
-        avutil
-        postproc
-        swresample
-        swscale
+#        avcodec
+#        avdevice
+#        avfilter
+#        avformat
+#        avutil
+#        postproc
+#        swresample
+#        swscale
         )

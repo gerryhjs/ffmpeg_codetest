@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xmapp/Downloads/ffmpeg-test
+CMAKE_SOURCE_DIR = /Users/xmapp/Documents/GitHub/ffmpeg_codetest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xmapp/Downloads/ffmpeg-test/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/xmapp/Documents/GitHub/ffmpeg_codetest/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/coding.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/coding.dir/flags.make
 
 CMakeFiles/coding.dir/VideoEncoding.cpp.o: CMakeFiles/coding.dir/flags.make
 CMakeFiles/coding.dir/VideoEncoding.cpp.o: ../VideoEncoding.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xmapp/Downloads/ffmpeg-test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/coding.dir/VideoEncoding.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/coding.dir/VideoEncoding.cpp.o -c /Users/xmapp/Downloads/ffmpeg-test/VideoEncoding.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xmapp/Documents/GitHub/ffmpeg_codetest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/coding.dir/VideoEncoding.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/coding.dir/VideoEncoding.cpp.o -c /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoEncoding.cpp
 
 CMakeFiles/coding.dir/VideoEncoding.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/VideoEncoding.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xmapp/Downloads/ffmpeg-test/VideoEncoding.cpp > CMakeFiles/coding.dir/VideoEncoding.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoEncoding.cpp > CMakeFiles/coding.dir/VideoEncoding.cpp.i
 
 CMakeFiles/coding.dir/VideoEncoding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/VideoEncoding.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xmapp/Downloads/ffmpeg-test/VideoEncoding.cpp -o CMakeFiles/coding.dir/VideoEncoding.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoEncoding.cpp -o CMakeFiles/coding.dir/VideoEncoding.cpp.s
 
 CMakeFiles/coding.dir/VideoDecoding.cpp.o: CMakeFiles/coding.dir/flags.make
 CMakeFiles/coding.dir/VideoDecoding.cpp.o: ../VideoDecoding.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xmapp/Downloads/ffmpeg-test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/coding.dir/VideoDecoding.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/coding.dir/VideoDecoding.cpp.o -c /Users/xmapp/Downloads/ffmpeg-test/VideoDecoding.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xmapp/Documents/GitHub/ffmpeg_codetest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/coding.dir/VideoDecoding.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/coding.dir/VideoDecoding.cpp.o -c /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoDecoding.cpp
 
 CMakeFiles/coding.dir/VideoDecoding.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/VideoDecoding.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xmapp/Downloads/ffmpeg-test/VideoDecoding.cpp > CMakeFiles/coding.dir/VideoDecoding.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoDecoding.cpp > CMakeFiles/coding.dir/VideoDecoding.cpp.i
 
 CMakeFiles/coding.dir/VideoDecoding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/VideoDecoding.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xmapp/Downloads/ffmpeg-test/VideoDecoding.cpp -o CMakeFiles/coding.dir/VideoDecoding.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoDecoding.cpp -o CMakeFiles/coding.dir/VideoDecoding.cpp.s
 
 # Object files for target coding
 coding_OBJECTS = \
@@ -95,7 +95,7 @@ libcoding.a: CMakeFiles/coding.dir/VideoEncoding.cpp.o
 libcoding.a: CMakeFiles/coding.dir/VideoDecoding.cpp.o
 libcoding.a: CMakeFiles/coding.dir/build.make
 libcoding.a: CMakeFiles/coding.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/xmapp/Downloads/ffmpeg-test/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcoding.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/xmapp/Documents/GitHub/ffmpeg_codetest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcoding.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/coding.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/coding.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/coding.dir/clean:
 .PHONY : CMakeFiles/coding.dir/clean
 
 CMakeFiles/coding.dir/depend:
-	cd /Users/xmapp/Downloads/ffmpeg-test/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xmapp/Downloads/ffmpeg-test /Users/xmapp/Downloads/ffmpeg-test /Users/xmapp/Downloads/ffmpeg-test/cmake-build-debug /Users/xmapp/Downloads/ffmpeg-test/cmake-build-debug /Users/xmapp/Downloads/ffmpeg-test/cmake-build-debug/CMakeFiles/coding.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/xmapp/Documents/GitHub/ffmpeg_codetest/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xmapp/Documents/GitHub/ffmpeg_codetest /Users/xmapp/Documents/GitHub/ffmpeg_codetest /Users/xmapp/Documents/GitHub/ffmpeg_codetest/cmake-build-debug /Users/xmapp/Documents/GitHub/ffmpeg_codetest/cmake-build-debug /Users/xmapp/Documents/GitHub/ffmpeg_codetest/cmake-build-debug/CMakeFiles/coding.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/coding.dir/depend
 

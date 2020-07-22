@@ -1,7 +1,7 @@
 #include "VideoDecoding.h"
 
 VideoDecoding::VideoDecoding() :
-    mFormatCtx(NULL), mCodecCtx(NULL), mVideoStreamIndex(-1)
+    mFormatCtx(nullptr), mCodecCtx(nullptr), mVideoStreamIndex(-1)
 {
 
 }
@@ -14,7 +14,7 @@ VideoDecoding::~VideoDecoding()
 
 bool VideoDecoding::init(const char * file)
 {
-    av_register_all();
+//    av_register_all();
 
     if ((avformat_open_input(&mFormatCtx, file, 0, 0)) < 0) {
         printf("Failed to open input file\n");
@@ -32,7 +32,7 @@ bool VideoDecoding::init(const char * file)
 bool VideoDecoding::findStreamIndex()
 {
     // Find video stream in the file
-    mVideoStreamIndex = av_find_best_stream(mFormatCtx, AVMEDIA_TYPE_VIDEO, -1, -1, NULL, 0);
+    mVideoStreamIndex = av_find_best_stream(mFormatCtx, AVMEDIA_TYPE_VIDEO, -1, -1, nullptr, 0);
     if (mVideoStreamIndex < 0) {
         printf("Could not find stream in input file\n");
         return true;
@@ -45,7 +45,7 @@ bool VideoDecoding::findStreamIndex()
 bool VideoDecoding::initCodecContext()
 {
     // Find a decoder with a matching codec ID
-    AVCodec *codec = avcodec_find_decoder_by_name("h264_videotoolbox");
+    AVCodec *codec = avcodec_find_decoder(mFormatCtx->streams[mVideoStreamIndex]->codecpar->codec_id);
     if (!codec) {
         printf("Failed to find h264_videotoolbox!\n");
         codec = avcodec_find_decoder(AV_CODEC_ID_H264);
@@ -69,7 +69,7 @@ bool VideoDecoding::initCodecContext()
     }
 
     // Initialize the AVCodecContext to use the given Codec
-    if (avcodec_open2(mCodecCtx, codec, NULL) < 0) {
+    if (avcodec_open2(mCodecCtx, codec, nullptr) < 0) {
         printf("Failed to open codec\n");
         return true;
     }

@@ -11,7 +11,7 @@ class VideoEncoding
 public:
     VideoEncoding();
     ~VideoEncoding();
-    bool init();
+    static bool init();
     bool initCodecContext();
     bool readFrameProc(const char *input, const char *output);
 

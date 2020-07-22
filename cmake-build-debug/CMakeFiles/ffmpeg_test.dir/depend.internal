@@ -28,6 +28,6 @@ CMakeFiles/ffmpeg_test.dir/main.cpp.o
  ../libs/ffmpeg/include/libavutil/rational.h
  ../libs/ffmpeg/include/libavutil/samplefmt.h
  ../libs/ffmpeg/include/libavutil/version.h
- /Users/xmapp/Downloads/ffmpeg-test/VideoDecoding.h
- /Users/xmapp/Downloads/ffmpeg-test/VideoEncoding.h
- /Users/xmapp/Downloads/ffmpeg-test/main.cpp
+ /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoDecoding.h
+ /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoEncoding.h
+ /Users/xmapp/Documents/GitHub/ffmpeg_codetest/main.cpp

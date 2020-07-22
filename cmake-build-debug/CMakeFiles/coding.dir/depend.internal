@@ -27,8 +27,8 @@ CMakeFiles/coding.dir/VideoDecoding.cpp.o
  ../libs/ffmpeg/include/libavutil/rational.h
  ../libs/ffmpeg/include/libavutil/samplefmt.h
  ../libs/ffmpeg/include/libavutil/version.h
- /Users/xmapp/Downloads/ffmpeg-test/VideoDecoding.cpp
- /Users/xmapp/Downloads/ffmpeg-test/VideoDecoding.h
+ /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoDecoding.cpp
+ /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoDecoding.h
 CMakeFiles/coding.dir/VideoEncoding.cpp.o
  ../libs/ffmpeg/include/libavcodec/avcodec.h
  ../libs/ffmpeg/include/libavcodec/version.h
@@ -56,5 +56,5 @@ CMakeFiles/coding.dir/VideoEncoding.cpp.o
  ../libs/ffmpeg/include/libavutil/rational.h
  ../libs/ffmpeg/include/libavutil/samplefmt.h
  ../libs/ffmpeg/include/libavutil/version.h
- /Users/xmapp/Downloads/ffmpeg-test/VideoEncoding.cpp
- /Users/xmapp/Downloads/ffmpeg-test/VideoEncoding.h
+ /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoEncoding.cpp
+ /Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoEncoding.h

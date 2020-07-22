@@ -1,7 +1,7 @@
 #include "VideoEncoding.h"
 
 VideoEncoding::VideoEncoding():
-    mCodecCtx(NULL)
+    mCodecCtx(nullptr)
 {
 }
 
@@ -13,7 +13,7 @@ VideoEncoding::~VideoEncoding()
 
 bool VideoEncoding::init()
 {
-    avcodec_register_all();
+//    avcodec_register_all();
     return false;
 }
 
@@ -54,7 +54,7 @@ bool VideoEncoding::initCodecContext()
     }
 
     // Initialize mCodecCtx to use the given Codec
-    if (avcodec_open2(mCodecCtx, codec, NULL) < 0) {
+    if (avcodec_open2(mCodecCtx, codec, nullptr) < 0) {
         printf("Failed to open codec\n");
         return true;
     }
@@ -71,7 +71,7 @@ bool VideoEncoding::readFrameProc(const char * input, const char * output)
         return true;
     }
 
-    AVFrame *frame = NULL;
+    AVFrame *frame = nullptr;
     if (!(frame = av_frame_alloc())) {
         printf("Failed to allocate video frame\n");
         return true;
@@ -87,13 +87,13 @@ bool VideoEncoding::readFrameProc(const char * input, const char * output)
     }
 
 
-    int num = 0, i = 0;
+    int i = 0;
     AVPacket pkt;
     // read a frame every time
     while (!feof(yuvFd)) {
 
         av_init_packet(&pkt);
-        pkt.data = NULL;    // packet data will be allocated by the encoder
+        pkt.data = nullptr;    // packet data will be allocated by the encoder
         pkt.size = 0;
 
         if (av_frame_make_writable(frame)) {
@@ -122,7 +122,7 @@ bool VideoEncoding::readFrameProc(const char * input, const char * output)
     // ��������ʱ����ȡ��ʱ������
 
     for (;; i++) {
-        avcodec_send_frame(mCodecCtx, NULL);
+        avcodec_send_frame(mCodecCtx, nullptr);
         int ret = avcodec_receive_packet(mCodecCtx, &pkt);
         if (ret == 0) {
             printf("Write frame %3d (size=%5d)\n", i, pkt.size);

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/xmapp/Downloads/ffmpeg-test/VideoDecoding.cpp" "/Users/xmapp/Downloads/ffmpeg-test/cmake-build-debug/CMakeFiles/coding.dir/VideoDecoding.cpp.o"
-  "/Users/xmapp/Downloads/ffmpeg-test/VideoEncoding.cpp" "/Users/xmapp/Downloads/ffmpeg-test/cmake-build-debug/CMakeFiles/coding.dir/VideoEncoding.cpp.o"
+  "/Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoDecoding.cpp" "/Users/xmapp/Documents/GitHub/ffmpeg_codetest/cmake-build-debug/CMakeFiles/coding.dir/VideoDecoding.cpp.o"
+  "/Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoEncoding.cpp" "/Users/xmapp/Documents/GitHub/ffmpeg_codetest/cmake-build-debug/CMakeFiles/coding.dir/VideoEncoding.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

@@ -270,11 +270,21 @@ attributes.h
 macros.h
 ../libs/ffmpeg/include/libavutil/macros.h
 
-/Users/xmapp/Downloads/ffmpeg-test/VideoEncoding.cpp
-VideoEncoding.h
-/Users/xmapp/Downloads/ffmpeg-test/VideoEncoding.h
+/Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoDecoding.cpp
+VideoDecoding.h
+/Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoDecoding.h
 
-/Users/xmapp/Downloads/ffmpeg-test/VideoEncoding.h
+/Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoDecoding.h
+libavcodec/avcodec.h
+-
+libavformat/avformat.h
+-
+
+/Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoEncoding.cpp
+VideoEncoding.h
+/Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoEncoding.h
+
+/Users/xmapp/Documents/GitHub/ffmpeg_codetest/VideoEncoding.h
 libavcodec/avcodec.h
 -
 libavformat/avformat.h
