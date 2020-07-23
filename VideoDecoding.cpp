@@ -114,35 +114,11 @@ bool VideoDecoding::decodeVideoFrame(AVPacket *pkt, AVFrame *frame, FILE *fd)
         // save YUV420p uncompressed video
         saveYUV(frame, fd);
 
-        // save every frame as a .pgm gray image
-        //savePGM(frame);
-
         printf("."); // program running state
         return false;
     }
 
     return true;
-}
-
-// pgm: Portable Gray Map
-bool VideoDecoding::savePGM(AVFrame * frame)
-{
-    static int frameNum = 0;
-
-    char pgmFile[30];
-    sprintf(pgmFile, "../assets/frame%d.pgm", frameNum++);
-    FILE *pFile = fopen(pgmFile, "wb");
-
-    fprintf(pFile, "P5\n%d %d\n%d\n", frame->width, frame->height, 255);
-
-    for (int i = 0; i < frame->height; i++) {
-        // Y
-        fwrite(frame->data[0] + i*frame->linesize[0], 1, mCodecCtx->width, pFile);
-    }
-
-    fclose(pFile);
-
-    return false;
 }
 
 bool VideoDecoding::saveYUV(AVFrame *frame, FILE *fd)

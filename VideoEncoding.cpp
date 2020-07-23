@@ -18,18 +18,24 @@ bool VideoEncoding::init()
 }
 
 // Configure AVCodecContext parameters Manually
-bool VideoEncoding::initCodecContext()
+bool VideoEncoding::initCodecContext(bool isH265)
 {
     // Find a encoder with a matching codec ID
-    AVCodec *codec = avcodec_find_encoder_by_name("h264_videotoolbox");
+    AVCodec *codec;
+    if (isH265)
+        codec=avcodec_find_encoder_by_name("hevc_videotoolbox");
+    else
+        codec=avcodec_find_encoder_by_name("h264_videotoolbox");
+
     if (!codec) {
-        printf("Failed to find h264_videotoolbox!\n");
-        codec = avcodec_find_encoder(AV_CODEC_ID_H264);
-        if (!codec)
-        {
-            printf("Failed to find codec!\n");
-            return true;
-        }
+        printf("Failed to find videotoolbox!\n");
+//        codec = avcodec_find_encoder(AV_CODEC_ID_H264);
+//        if (!codec)
+//        {
+//            printf("Failed to find codec!\n");
+//            return true;
+//        }
+        exit(1);
     }
     mCodecCtx = avcodec_alloc_context3(codec);
     if (!mCodecCtx) {
@@ -48,10 +54,7 @@ bool VideoEncoding::initCodecContext()
     mCodecCtx->max_b_frames = 1;
     mCodecCtx->pix_fmt = AV_PIX_FMT_YUV420P;
 
-    if (codec->id == AV_CODEC_ID_H264) {
-        //av_opt_set(mCodecCtx->priv_data, "preset", "slow", 0);   // delay ~18 frames
-        av_opt_set(mCodecCtx->priv_data, "tune", "zerolatency", 0);    // no delay
-    }
+    av_opt_set(mCodecCtx->priv_data, "tune", "zerolatency", 0);
 
     // Initialize mCodecCtx to use the given Codec
     if (avcodec_open2(mCodecCtx, codec, nullptr) < 0) {

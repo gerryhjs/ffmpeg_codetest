@@ -17,7 +17,7 @@ public:
 
 private:
     bool decodeVideoFrame(AVPacket *pkt, AVFrame *fram, FILE *fd);
-    bool savePGM(AVFrame *frame);
+
     bool saveYUV(AVFrame *frame, FILE *fd);
 
     int mVideoStreamIndex;

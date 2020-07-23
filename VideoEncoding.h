@@ -12,7 +12,7 @@ public:
     VideoEncoding();
     ~VideoEncoding();
     static bool init();
-    bool initCodecContext();
+    bool initCodecContext(bool isH265);
     bool readFrameProc(const char *input, const char *output);
 
 private:
